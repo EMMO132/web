@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Motorbikes - AutoDealer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4CAF50',
+            dark: {
+              100: '#1E1E1E',
+              200: '#181818',
+              300: '#121212'
+            }
+          },
+          borderRadius: {
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #121212; color: white; }
+    .bike-card { background-color: #1E1E1E; transition: 0.3s ease; }
+    .bike-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    .bike-image { aspect-ratio: 16/9; overflow: hidden; }
+    .bike-image img { transition: transform 0.5s ease; }
+    .bike-card:hover .bike-image img { transform: scale(1.05); }
+
+    /* Tunisian Vibe style */
+    .logo-text {
+      font-size: 1rem;
+      color: #4CAF50;
+      font-weight: 600;
+      margin-left: 0.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+      white-space: nowrap;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky top-0 z-50 bg-dark-300 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+  <img src="https://cdn.discordapp.com/attachments/1377636779565383681/1378353700501848137/3dgifmaker10197.gif?ex=683c4b6a&is=683af9ea&hm=fdaa71138b7fea6a0d43ad6debb1d0a395ed06878aa22e000b5dc40c1f9c87bc" 
+       alt="Logo" 
+       class="h-32 w-auto" />
+
+  <span class="text-white text-3xl font-semibold tracking-widest select-none">Tunisian Vibe</span>
+</div>
+
+  </header>
+
+  <div class="container mx-auto px-4 py-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Example Motorbike 1 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370275991255252992/1370275991490007102/5f42d6-GTA5_2016-05-08_02-43-45-89.webp?ex=683c9236&is=683b40b6&hm=f621279e73202d6e448915c8c8668270b49bca0ad3e7b49f78a0a03437d4e72b&" alt="Motorbike 1" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">Kawasaki Ninja H2/H2R</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+
+      <!-- Example Motorbike 2 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370276798197141614/1370276798595731476/013d46-sd1.webp?ex=683c92f7&is=683b4177&hm=ddb31d25ac936365d59683f02a71778ce5842eeee93a56428f166b90ed374e89&" alt="Motorbike 2" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">KTM Super Duke R 1290</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+
+      <!-- Example Motorbike 3 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370277454358380617/1370277454777815101/7b64a5-GTA5_2016-09-15_18-16-04.jpg?ex=683c9393&is=683b4213&hm=f03a74e6abaeaf593673d5976a086f4e35600ede7a91faebf5bd6b944733665c&" alt="Motorbike 2" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">Honda CRF 450 Turbo Motard</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+
+      <!-- Example Motorbike 4 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370274302976458795/1370274303970377869/2186ca-GTA5_2016-12-11_10-52-25-28.jpg?ex=683c90a4&is=683b3f24&hm=ce40bff7720aec8a48a5ac327d846969eb5082e85f478a2a1dcbb3b29d5cc5f3&" alt="Motorbike 2" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">Yamaha XT660 2016</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+
+      <!-- Example Motorbike 5 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370274504122830919/1370274504915419136/2dd047-GTA5_2017-07-09_23-15-54.jpg?ex=683c90d4&is=683b3f54&hm=3c4f275d61d65624f98d5be6bad7d2acfb9063c28b193ddc877d4413db46f202&" alt="Motorbike 2" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">2009 Yamaha YZF250 - Supermotard</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+
+      <!-- Example Motorbike 6 -->
+      <div class="bike-card rounded overflow-hidden shadow-lg">
+        <div class="bike-image">
+          <img src="https://cdn.discordapp.com/attachments/1370273337887952916/1370273338856964137/c60258-d.webp?ex=683c8fbe&is=683b3e3e&hm=20fe069bc0f96d25e94c004a0afea1e273be8bacec59ead4dbfa119031d67925&" alt="Motorbike 2" class="w-full h-full object-cover object-top" />
+        </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">2018 Yamaha YZF-R1
+</h2>
+          <p class="text-primary font-bold text-lg mt-2">20 dt</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

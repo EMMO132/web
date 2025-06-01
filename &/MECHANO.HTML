@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Motorbikes - AutoDealer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4CAF50',
+            dark: {
+              100: '#1E1E1E',
+              200: '#181818',
+              300: '#121212'
+            }
+          },
+          borderRadius: {
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #121212; color: white; }
+    .bike-card { background-color: #1E1E1E; transition: 0.3s ease; }
+    .bike-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    .bike-image { aspect-ratio: 16/9; overflow: hidden; }
+    .bike-image img { transition: transform 0.5s ease; }
+    .bike-card:hover .bike-image img { transform: scale(1.05); }
+
+    /* Tunisian Vibe style */
+    .logo-text {
+      font-size: 1rem;
+      color: #4CAF50;
+      font-weight: 600;
+      margin-left: 0.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+      white-space: nowrap;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky top-0 z-50 bg-dark-300 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+  <img src="https://cdn.discordapp.com/attachments/1377636779565383681/1378353700501848137/3dgifmaker10197.gif?ex=683c4b6a&is=683af9ea&hm=fdaa71138b7fea6a0d43ad6debb1d0a395ed06878aa22e000b5dc40c1f9c87bc" 
+       alt="Logo" 
+       class="h-32 w-auto" />
+
+  <span class="text-white text-3xl font-semibold tracking-widest select-none">Tunisian Vibe</span>
+</div>
+
+  </header>
+
+  <div class="container mx-auto px-4 py-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Bike Card with 2 stacked photos -->
+<div class="bike-card rounded overflow-hidden shadow-lg w-full max-w-sm mx-auto">
+  <div class="bike-images space-y-2">
+    <img src="https://cdn.discordapp.com/attachments/1367290705696788540/1374700528499691572/FiveM_by_Cfx.re_-_Tunisian_Vibe_s_Beta__https___discord.gg_Fttds9DMBf_5_21_2025_11_26_21_AM.png?ex=683cd8e2&is=683b8762&hm=6c2f9b70408073002175fd3e46ab288dd9ef9b2a5a7916b32f3c92c316398e06&"
+      alt="Motorbike 1" class="w-full h-48 object-cover rounded" />
+
+    <img src="https://cdn.discordapp.com/attachments/1367290705696788540/1374700529321771038/FiveM_b2545_GTAProcess_2023-01-13_14-34-47.png?ex=683cd8e2&is=683b8762&hm=b509c8594a59d5c9efc95608476125c773f2b9099a47dbad65031375677ac58f&"
+      alt="Motorbike 2" class="w-full h-48 object-cover rounded" />
+  </div>
+
+  <div class="p-4">
+    <h2 class="text-xl font-semibold">𝐦𝐞𝐜𝐡𝐚𝐧𝐨 𝐛𝐞𝐧𝐧𝐢𝐬</h2>
+    <p class="text-primary font-bold text-lg mt-2">60 dt</p>
+  </div>
+</div>
+<!-- Bike Card with 2 stacked photos -->
+<div class="bike-card rounded overflow-hidden shadow-lg w-full max-w-sm mx-auto">
+  <div class="bike-images space-y-2">
+    <img src="https://cdn.discordapp.com/attachments/1367290705696788540/1374701226691788852/FiveM_by_Cfx.re_-_Tunisian_Vibe_s_Beta__https___discord.gg_Fttds9DMBf_5_21_2025_11_25_32_AM.png?ex=683cd989&is=683b8809&hm=6798127eb2512579c6c24107ecabb7c99bd70a3f8409c9272d3046c1d14948f6&"
+      alt="Motorbike 1" class="w-full h-48 object-cover rounded" />
+
+    <img src="https://cdn.discordapp.com/attachments/1367290705696788540/1374701227316875374/image.png?ex=683cd989&is=683b8809&hm=32c2b14dca81e7c3e7cf5ef0ba4bdc27379906edee4a4e715e5ed05e7436c0e2&"
+      alt="Motorbike 2" class="w-full h-48 object-cover rounded" />
+  </div>
+
+  <div class="p-4">
+    <h2 class="text-xl font-semibold">𝐦𝐞𝐜𝐡𝐚𝐧𝐨 𝐠𝐫𝐨𝐯𝐞 𝐬𝐭𝐫𝐞𝐞𝐭</h2>
+    <p class="text-primary font-bold text-lg mt-2">60 dt</p>
+  </div>
+</div>
+<!-- Bike Card with 2 stacked photos -->
+<div class="bike-card rounded overflow-hidden shadow-lg w-full max-w-sm mx-auto">
+  <div class="bike-images space-y-2">
+    <img src=https://cdn.discordapp.com/attachments/1325207032709644289/1378564309311029370/Screenshot_2025-06-01_034117.png?ex=683d0f8f&is=683bbe0f&hm=2dc6de8a760eeb48dcbbe1ec879d3f4f061507052e8bb6841a7f7ace758b96e5&"
+      alt="Motorbike 1" class="w-full h-48 object-cover rounded" />
+
+    <img src="https://cdn.discordapp.com/attachments/1325207032709644289/1378564355674865664/Screenshot_2025-06-01_034139.png?ex=683d0f9a&is=683bbe1a&hm=8f82f7b57fae01f638a9eca04cc46b0b6622b9ecad2e1c0b714cf8d787b7d5cf&"
+      alt="Motorbike 2" class="w-full h-48 object-cover rounded" />
+  </div>
+
+  <div class="p-4">
+    <h2 class="text-xl font-semibold">𝐦𝐞𝐜𝐡𝐚𝐧𝐨 𝐜𝐚𝐫𝐝𝐞𝐚𝐥𝐞𝐫</h2>
+    <p class="text-primary font-bold text-lg mt-2">60 dt</p>
+  </div>
+</div>
+
+
